@@ -1,0 +1,5 @@
+---
+- name: Reload-nginx
+  become: true
+  changed_when: false
+  ansible.builtin.command: nginx -s reload
